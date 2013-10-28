@@ -53,3 +53,5 @@ As the list of libraries that you needs grows, add them to the list following th
 
 To turn on tab-completion of pip commands and options, add the following to your .profile after modifying your path so that pip can be found: ``eval "`pip completion --bash`"``
 
+## Freezing Requirements
+
