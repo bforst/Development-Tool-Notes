@@ -1,0 +1,50 @@
+# Turn on coloring and set directories to be light blue (so I can read it).
+export CLICOLOR=1
+export LSCOLORS=Gxfxcxdxbxegedabagacad
+
+# Virtualenvwrapper is installed in Python 3.
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+
+# Source the virtualenvwrapper file to make everything work seamlessly.
+source /Library/Frameworks/Python.framework/Versions/3.3/bin/virtualenvwrapper.sh
+
+# Pip should always install from the global wheelhouse directory if possible.
+export PIP_USE_WHEEL=true
+export PIP_WHEEL_DIR=$HOME/.wheelhouse
+export PIP_FIND_LINKS="$PIP_WHEEL_DIR"
+
+# A more convenient alias for listing a directory nicely.
+alias lsa='ls -A1'
+
+# A convenient way to list the directory and copy its contents to the clipboard.
+alias lsacopy='ls -A1 | pbcopy'
+
+# Set the editor to Sublime Text.
+export EDITOR=subl
+
+###############################################################################
+# All modifications to the PATH variable happen in this section.
+
+# Add /usr/local/sbin for homebrew.
+PATH="/usr/local/sbin:${PATH}"
+
+# Set PATH for Python 2.7, then 3.3
+PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+PATH="/Library/Frameworks/Python.framework/Versions/3.3/bin:${PATH}"
+
+# Set PATH for the Postgres.app
+PATH="/Applications/Postgres.app/Contents/MacOS/bin:${PATH}"
+
+# Add my own scripts path.
+PATH="${PATH}:$HOME/Dropbox/Scripts/"
+
+# Export out the new PATH.
+export PATH
+
+###############################################################################
+
+# Turn on pip auto-completion of command-line options.
+eval "`pip completion --bash`"
+
+# Set the prompt to be the current directory and user.
+export PS1="\W \u$ "
