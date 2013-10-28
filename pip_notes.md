@@ -34,5 +34,6 @@ Periodically, you will want to delete the contents of the Wheelhouse and recreat
 
 As the list of libraries that you needs grows, add them to the list following the `wheel` command.
 
+* After running the first command, the second command may fail noting that files/folders already exist and it does not want to over-write them. Open the temp folder that it complains about, delete all of the contents, and re-run if this occurs.
 * `pip-3.3 wheel pip setuptools wheel requests bpython flask django pytest ipython tornado pyzmq jinja2 sqlalchemy numpy matplotlib pandas ipython-sql`
 * `pip-2.7 wheel pip setuptools wheel requests bpython flask django pytest ipython tornado pyzmq jinja2 sqlalchemy numpy matplotlib pandas ipython-sql`
