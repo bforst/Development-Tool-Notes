@@ -34,5 +34,5 @@ Periodically, you will want to delete the contents of the Wheelhouse and recreat
 
 As the list of libraries that you needs grows, add them to the list following the `wheel` command.
 
-* `pip-3.3 wheel pip setuptools wheel requests bpython ipython tornado pyzmq jinja2 sqlalchemy numpy matplotlib pandas ipython-sql`
-* `pip-2.7 wheel pip setuptools wheel requests bpython ipython tornado pyzmq jinja2 sqlalchemy numpy matplotlib pandas ipython-sql`
+* `pip-3.3 wheel pip setuptools wheel requests bpython flask django pytest ipython tornado pyzmq jinja2 sqlalchemy numpy matplotlib pandas ipython-sql`
+* `pip-2.7 wheel pip setuptools wheel requests bpython flask django pytest ipython tornado pyzmq jinja2 sqlalchemy numpy matplotlib pandas ipython-sql`
