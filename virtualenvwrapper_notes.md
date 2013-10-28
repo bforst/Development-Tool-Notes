@@ -1,0 +1,2 @@
+# Notes on virtualenvwrapper usage
+
