@@ -4,4 +4,5 @@ pyzmq
 jinja2
 pandas
 sqlalchemy
+numpy
 matplotlib
