@@ -28,7 +28,7 @@ The following environment variables have been set specifically for pip. They wil
 
 ## Maintaining the Wheelhouse
 
-The Wheelhouse is where you store the wheel files to give you fast local installs. This has been set by the `PIP_WHEEL_DIR` environment variable above.
+The Wheelhouse is where you store the wheel files to give you fast local installs. This has been set by the `PIP_WHEEL_DIR` environment variable above. Paired with the `PIP_FIND_LINKS` variable, the given directory will automatically be used for creating new wheels without requiring the `--find-links` option.
 
 Periodically, you will want to delete the contents of the Wheelhouse and recreate all of the wheels that were in there. There is a monthly task in your calendar to perform this action. This should also happen after any major OS upgrade. After running this task, you should also activate all of your virtual environments, run `pip list -o`, and upgrade any libraries that have fallen out of date (whose exact version you don't care about).
 
