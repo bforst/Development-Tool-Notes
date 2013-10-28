@@ -26,6 +26,17 @@ The following environment variables have been set specifically for pip. They wil
         * wheel: unsure how this will affect the command.
         * bundle: unsure how this will affect the command.
 
+Instead of environment variables, plain old .ini configuration files located at `$HOME/.pip/pip.conf` can be used. This allows for finer-grained application of certain switches. For example, the following config will only use the urls in the install section for the install command, but will use the link in the global section for all other commands.
+
+    [global]
+    find-links =
+        http://download.example.com
+    
+    [install]
+    find-links =
+        http://mirror1.example.com
+        http://mirror2.example.com
+
 ## Maintaining the Wheelhouse
 
 The Wheelhouse is where you store the wheel files to give you fast local installs. This has been set by the `PIP_WHEEL_DIR` environment variable above. Paired with the `PIP_FIND_LINKS` variable, the given directory will automatically be used for creating new wheels without requiring the `--find-links` option.
