@@ -1,0 +1,8 @@
+ipython
+tornado
+pyzmq
+jinja2
+pandas
+sqlalchemy
+wheel
+matplotlib
