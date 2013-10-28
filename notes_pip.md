@@ -1,5 +1,14 @@
 # Notes on pip usage
 
+## Sources
+
+The following documentation has been useful in understanding pip:
+
+* [pip Project Documentation](http://pip-installer.org)
+* [pip Usage](http://www.pip-installer.org/en/latest/usage.html)
+* [pip Cookbook](http://www.pip-installer.org/en/latest/cookbook.html)
+* [pip Configuration](http://www.pip-installer.org/en/latest/configuration.html)
+
 ## Environment Variables
 
 The command line options for pip can be set with environment variables using the format:
