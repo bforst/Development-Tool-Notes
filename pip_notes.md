@@ -28,9 +28,11 @@ The following environment variables have been set specifically for pip. They wil
 
 ## Maintaining the Wheelhouse
 
+The Wheelhouse is where you store the wheel files to give you fast local installs. This has been set by the `PIP_WHEEL_DIR` environment variable above.
 
+Periodically, you will want to delete the contents of the Wheelhouse and recreate all of the wheels that were in there. There is a monthly task in your calendar to perform this action. This should also happen after any major OS upgrade. After running this task, you should also activate all of your virtual environments, run `pip list -o`, and upgrade any libraries that have fallen out of date (whose exact version you don't care about).
 
-Periodically, rec
+As the list of libraries that you needs grows, add them to the list following the `wheel` command.
 
 * `pip-3.3 wheel pip setuptools wheel requests bpython ipython tornado pyzmq jinja2 sqlalchemy numpy matplotlib pandas ipython-sql`
 * `pip-2.7 wheel pip setuptools wheel requests bpython ipython tornado pyzmq jinja2 sqlalchemy numpy matplotlib pandas ipython-sql`
