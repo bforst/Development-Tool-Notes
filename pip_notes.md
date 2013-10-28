@@ -48,3 +48,8 @@ As the list of libraries that you needs grows, add them to the list following th
 * After running the first command, the second command may fail noting that files/folders already exist and it does not want to over-write them. Open the temp folder that it complains about, delete all of the contents, and re-run if this occurs.
 * `pip-3.3 wheel pip setuptools wheel requests bpython flask django pytest ipython tornado pyzmq jinja2 sqlalchemy numpy matplotlib pandas ipython-sql`
 * `pip-2.7 wheel pip setuptools wheel requests bpython flask django pytest ipython tornado pyzmq jinja2 sqlalchemy numpy matplotlib pandas ipython-sql`
+
+## Command-line Auto-completion
+
+To turn on tab-completion of pip commands and options, add the following to your .profile after modifying your path so that pip can be found: ``eval "`pip completion --bash`"``
+
