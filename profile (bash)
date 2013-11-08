@@ -19,6 +19,9 @@ alias lsa='ls -A1'
 # A convenient way to list the directory and copy its contents to the clipboard.
 alias lsacopy='ls -A1 | pbcopy'
 
+# Put the unique lines in the clipboard onto the clipboard.
+alias uniq_clipboard='pbpaste | sort | uniq | pbcopy'
+
 # Set the editor to Sublime Text.
 export EDITOR=subl
 
